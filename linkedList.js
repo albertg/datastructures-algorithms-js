@@ -51,6 +51,8 @@ class LinkedList{
 		node.next = excise.next;
 		if(node.next && !node.next.next){
 			this.tail = node.next;
+		}else{
+			this.tail = node;
 		}
 		this.length--;
 		return excise.value;
